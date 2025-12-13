@@ -1,0 +1,258 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   WITCHCRAFT FOR BEGINNERS - Design Tokens
+   ═══════════════════════════════════════════════════════════════════════════
+   DNA: Mystical warmth, accessible wisdom, grounded practitioner
+   Persona: A wise, experienced witch who remembers being a beginner
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ═══════════════════════════════════════
+     COLOR SYSTEM - Mystical Night Palette
+     ═══════════════════════════════════════ */
+  
+  /* Primary - Deep Purple (wisdom, mystery) */
+  --color-primary: #4A1C6F;
+  --color-primary-light: #6B3FA0;
+  --color-primary-dark: #2D1149;
+  --color-primary-rgb: 74, 28, 111;
+  
+  /* Secondary - Gold (sacred, magical) */
+  --color-secondary: #C9A962;
+  --color-secondary-light: #E5D4A1;
+  --color-secondary-dark: #9A7B3D;
+  --color-secondary-rgb: 201, 169, 98;
+  
+  /* Accent - Midnight Blue (depth, night sky) */
+  --color-accent: #1E3A5F;
+  --color-accent-light: #2D5A8A;
+  --color-accent-dark: #0F1F33;
+  
+  /* Neutrals - Dark Theme */
+  --color-background: #0D0D0D;
+  --color-surface: #1A1A1A;
+  --color-surface-elevated: #242424;
+  --color-text: #E8E8E8;
+  --color-text-muted: #A0A0A0;
+  --color-text-inverse: #0D0D0D;
+  --color-border: #333333;
+  --color-border-subtle: #222222;
+  
+  /* Functional Colors */
+  --color-success: #4A9F5E;
+  --color-warning: #D4A84B;
+  --color-error: #A34545;
+  --color-info: #4A7FA3;
+  
+  /* Magical Effects */
+  --color-glow-gold: rgba(201, 169, 98, 0.3);
+  --color-glow-purple: rgba(74, 28, 111, 0.4);
+  --color-overlay-dark: rgba(13, 13, 13, 0.8);
+  --color-overlay-mystical: rgba(74, 28, 111, 0.15);
+  
+  /* ═══════════════════════════════════════
+     TYPOGRAPHY - Mystical Elegance
+     ═══════════════════════════════════════ */
+  
+  /* Font Families */
+  --font-display: 'Cinzel', 'Cormorant Garamond', 'Playfair Display', serif;
+  --font-body: 'Lora', 'Crimson Text', 'EB Garamond', serif;
+  --font-accent: 'Tangerine', 'Great Vibes', cursive;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  /* Font Sizes - Fluid Scale */
+  --font-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --font-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --font-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --font-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --font-xl: clamp(1.25rem, 1rem + 1.25vw, 1.75rem);
+  --font-2xl: clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem);
+  --font-3xl: clamp(1.875rem, 1.25rem + 3.125vw, 3rem);
+  --font-4xl: clamp(2.25rem, 1.25rem + 5vw, 4rem);
+  --font-hero: clamp(2.5rem, 1rem + 7.5vw, 5rem);
+  
+  /* Font Weights */
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+  --leading-loose: 1.9;
+  
+  /* Letter Spacing */
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+  --tracking-display: 0.02em;
+  
+  /* ═══════════════════════════════════════
+     SPACING SYSTEM - 8px Grid
+     ═══════════════════════════════════════ */
+  
+  --space-1: 0.25rem;    /* 4px */
+  --space-2: 0.5rem;     /* 8px */
+  --space-3: 0.75rem;    /* 12px */
+  --space-4: 1rem;       /* 16px */
+  --space-5: 1.25rem;    /* 20px */
+  --space-6: 1.5rem;     /* 24px */
+  --space-8: 2rem;       /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+  --space-32: 8rem;      /* 128px */
+  
+  /* Fluid Section Spacing */
+  --section-gap: clamp(5rem, 10vw, 10rem);
+  --content-gap: clamp(2rem, 4vw, 4rem);
+  
+  /* ═══════════════════════════════════════
+     LAYOUT
+     ═══════════════════════════════════════ */
+  
+  --container-max: 72rem;     /* 1152px - slightly narrower for intimacy */
+  --container-narrow: 48rem;  /* 768px */
+  --container-wide: 85rem;    /* 1360px */
+  --content-width: 60ch;      /* Optimal reading width */
+  
+  /* ═══════════════════════════════════════
+     BORDERS & RADIUS
+     ═══════════════════════════════════════ */
+  
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  --border-thin: 1px;
+  --border-normal: 2px;
+  --border-thick: 3px;
+  --border-accent: 4px;
+  
+  /* ═══════════════════════════════════════
+     SHADOWS & EFFECTS
+     ═══════════════════════════════════════ */
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+  
+  --shadow-glow-gold: 0 0 20px rgba(201, 169, 98, 0.3),
+                      0 0 40px rgba(201, 169, 98, 0.15);
+  --shadow-glow-purple: 0 0 30px rgba(74, 28, 111, 0.4),
+                        0 0 60px rgba(74, 28, 111, 0.2);
+  
+  --shadow-text-glow: 0 0 10px rgba(201, 169, 98, 0.5),
+                      0 0 20px rgba(201, 169, 98, 0.3),
+                      0 0 30px rgba(201, 169, 98, 0.1);
+  
+  /* ═══════════════════════════════════════
+     ANIMATION
+     ═══════════════════════════════════════ */
+  
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 600ms;
+  --duration-slower: 1000ms;
+  --duration-mystical: 1200ms;
+  
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-mystical: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* ═══════════════════════════════════════
+     Z-INDEX SCALE
+     ═══════════════════════════════════════ */
+  
+  --z-base: 0;
+  --z-elevated: 10;
+  --z-sticky: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+  --z-popover: 400;
+  --z-maximum: 9999;
+}
+
+/* ═══════════════════════════════════════
+   UTILITY CLASSES
+   ═══════════════════════════════════════ */
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--color-secondary-light), var(--color-secondary), var(--color-secondary-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-glow {
+  text-shadow: var(--shadow-text-glow);
+}
+
+.bg-mystical-gradient {
+  background: radial-gradient(ellipse at center, 
+    var(--color-overlay-mystical) 0%, 
+    transparent 70%);
+}
+
+.bg-night-sky {
+  background: linear-gradient(180deg,
+    var(--color-background) 0%,
+    var(--color-accent-dark) 50%,
+    var(--color-background) 100%);
+}
+
+.border-gold {
+  border-color: var(--color-secondary);
+}
+
+.glow-gold {
+  box-shadow: var(--shadow-glow-gold);
+}
+
+.glow-purple {
+  box-shadow: var(--shadow-glow-purple);
+}
+
+/* Animation */
+@keyframes fadeFromDarkness {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gentlePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-emerge {
+  animation: fadeFromDarkness var(--duration-mystical) var(--ease-mystical) both;
+}
+
+.animate-pulse-gentle {
+  animation: gentlePulse 3s var(--ease-in-out) infinite;
+}
